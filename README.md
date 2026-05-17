@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Đồ án: Frontend Website Bán Cây Cảnh
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Đây là mã nguồn giao diện (Frontend) cho dự án Website Bán Cây Cảnh. Dự án được xây dựng bằng thư viện ReactJS.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🛠 1. Yêu cầu hệ thống (Prerequisites)
 
-### `npm start`
+Dự án này sử dụng ReactJS, do đó máy tính của bạn **bắt buộc phải cài đặt Node.js** (để làm môi trường chạy code) trước khi khởi chạy dự án.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Nếu máy bạn chưa có Node.js, vui lòng cài đặt theo 1 trong 2 cách sau:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Dành cho Windows / macOS:** Truy cập trang chủ [nodejs.org](https://nodejs.org/), tải phiên bản **LTS (Recommended For Most Users)** và cài đặt như phần mềm bình thường (Cứ nhấn Next cho đến khi Finish).
+* **Dành cho Linux (Ubuntu):**
+  Mở Terminal và chạy lần lượt 2 lệnh sau:
+  ```bash
+  sudo apt update
+  sudo apt install nodejs npm -y
+(Để kiểm tra xem đã cài đặt thành công chưa, gõ lệnh node -v vào Terminal. Nếu hiện ra số phiên bản là OK).
 
-### `npm test`
+🚀 2. Hướng dẫn cài đặt và Khởi chạy
+Sau khi đã đảm bảo máy tính có Node.js, bạn làm tuần tự các bước sau để chạy website:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Bước 1: Cài đặt thư viện (Bắt buộc)
+Di chuyển vào thư mục gốc của dự án (Web_Cay_Canh_FE). Mở Terminal tại đây và chạy lệnh sau để tải toàn bộ thư viện lõi của React (sẽ tự động tạo ra thư mục node_modules):
 
-### `npm run build`
+Bash
+npm install
+(Vui lòng đợi một lát để quá trình tải hoàn tất 100%).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Bước 2: Khởi chạy Server ảo
+Sau khi cài đặt xong thư viện, tiếp tục chạy lệnh:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Bash
+npm start
+Bước 3: Xem kết quả
+Trình duyệt sẽ tự động mở trang web tại địa chỉ: http://localhost:3000
+(Mọi thay đổi trong code của bạn sẽ được tự động cập nhật ngay lập tức trên trình duyệt mà không cần F5).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+📚 3. Cấu trúc thư mục cơ bản
+src/: Chứa toàn bộ mã nguồn chính của Frontend (Components, Pages, Assets...).
 
-### `npm run eject`
+public/: Chứa các tài nguyên tĩnh như file index.html, favicon, logo.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+package.json: Chứa danh sách các thư viện phụ thuộc và các cấu hình chạy lệnh của dự án.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+.gitignore: Các file và thư mục (như node_modules) không được phép đẩy lên Git.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+💡 4. Ghi chú thêm
+Dự án có tích hợp Tailwind CSS để hỗ trợ thiết kế giao diện nhanh chóng (xem cấu hình tại tailwind.config.js).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Nếu bạn muốn kết nối với Backend API, vui lòng đảm bảo Backend đang được chạy song song ở một port khác và cấu hình lại đường dẫn gọi API trong mã nguồn nếu cần.

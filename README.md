@@ -40,7 +40,6 @@ Sau khi cài đặt xong thư viện, tiếp tục chạy lệnh:
 
 **Bước 3: Xem kết quả**
 Trình duyệt sẽ tự động mở trang web tại địa chỉ: **http://localhost:3000**
-*(Mọi thay đổi trong code của bạn sẽ được tự động cập nhật ngay lập tức trên trình duyệt mà không cần F5).*
 
 ---
 

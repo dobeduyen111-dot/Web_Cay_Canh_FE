@@ -13,6 +13,7 @@ Nếu máy bạn chưa có Node.js, vui lòng cài đặt theo 1 trong 2 cách s
 * **Dành cho Windows / macOS:** Truy cập trang chủ [nodejs.org](https://nodejs.org/), tải phiên bản **LTS (Recommended For Most Users)** và cài đặt như phần mềm bình thường (Cứ nhấn Next cho đến khi Finish).
 * **Dành cho Linux (Ubuntu):**
   Mở Terminal và chạy lần lượt 2 lệnh sau:
+  
   `sudo apt update`
   `sudo apt install nodejs npm -y`
 
